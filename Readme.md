@@ -30,7 +30,7 @@ de las habitaciones (ambientes) disponibles con las fechas y hora que se pueden 
 - Trabajar el proyecto con Python (Django) / Frontend () / Interface agradable / Test automáticos / Banco de datos (PostgreSQL) / Repositorio online (Github)/ Tener Readme.md
 - Aplicativo para API nque permita consultar y manipular las reservas de ambientes.
 - Documentar la API()
-- Cadatsro para la resrva de ambiente: Vizualizar, actualizar y eliminar
+- Cadastro para la reserva de ambiente: Vizualizar, actualizar y eliminar
 - Banco de Datos 
 - Validadciones con el CPF e Email
 - Validar que se tenga una sola reserva por día el condominio y no permitir más reservas.
