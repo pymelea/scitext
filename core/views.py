@@ -15,6 +15,7 @@ class EnvironmentViewSet(viewsets.ModelViewSet):
     """
     This viewset automatically provides `list`, `create`, `retrieve`,
     `update` and `destroy` actions.
+    
 
     """
     queryset = Environment.objects.filter(available=True)
