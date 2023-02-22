@@ -24,24 +24,26 @@ SECRET_KEY = 'django-insecure-8(!^tk+@)t@x8aph*5(qp5_^tip&fq+)*(af1ryu%rva(psjgc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
 INSTALLED_APPS = [
+    # My APP's
+    'core',
+    'accounts',
+    # Comun
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # My APP's
-    'api',
-    'core',
-    'accounts',
     # Third party libraries
     'rest_framework',
-    'knock',
+    'knox',
+    'django_filters',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
@@ -72,6 +74,10 @@ TEMPLATES = [
     },
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': ('knox.auth.TokenAuthentication',),
+}
+
 WSGI_APPLICATION = 'scicontabeis.wsgi.application'
 
 # Database
@@ -88,6 +94,7 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
