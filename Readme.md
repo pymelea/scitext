@@ -38,3 +38,7 @@ de las habitaciones (ambientes) disponibles con las fechas y hora que se pueden 
 - Frontend permitir busqueda de reserva de ambiente por CPF del responsable de la resrva.
 - Validaciones del fronten y del backend.
 
+<img src="img/1.png"/>
+<img src="img/api.png"/>
+<img src="img/swagger.png"/>
+<img src="img/doc_swagger.png"/>
